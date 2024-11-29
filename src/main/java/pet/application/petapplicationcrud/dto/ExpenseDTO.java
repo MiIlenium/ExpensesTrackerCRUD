@@ -2,11 +2,12 @@ package pet.application.petapplicationcrud.dto;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import jakarta.annotation.Nullable;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import pet.application.petapplicationcrud.enums.PaymentMethodEnum;
+import pet.application.petapplicationcrud.enums.PaymentMethod;
 import pet.application.petapplicationcrud.entity.Category;
 import pet.application.petapplicationcrud.entity.Tag;
 
@@ -29,9 +30,11 @@ public class ExpenseDTO {
     private Date date;
     @JsonProperty("paymentMethod")
     @JsonFormat(shape = JsonFormat.Shape.STRING)
-    private PaymentMethodEnum paymentMethod;
+    private PaymentMethod paymentMethod;
     @JsonProperty("tags")
+    @Nullable
     private List<Tag> tags;
     @JsonProperty("category")
-    private Category category;
+    @Nullable
+    private List<Category> category;
 }

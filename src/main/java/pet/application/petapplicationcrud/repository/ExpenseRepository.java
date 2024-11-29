@@ -1,12 +1,13 @@
 package pet.application.petapplicationcrud.repository;
 
+import jakarta.annotation.Nonnull;
 import org.springframework.data.repository.CrudRepository;
 import pet.application.petapplicationcrud.entity.Expense;
 
 import java.util.Set;
 
 public interface ExpenseRepository extends CrudRepository<Expense, Long> {
-    Expense getExpenseById(int id);
 
+    @Nonnull
     Set<Expense> findAll();
 }

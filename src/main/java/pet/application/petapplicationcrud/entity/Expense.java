@@ -4,10 +4,9 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import pet.application.petapplicationcrud.enums.PaymentMethodEnum;
+import pet.application.petapplicationcrud.enums.PaymentMethod;
 
 import java.util.Date;
-import java.util.List;
 
 @Entity
 @Data
@@ -20,15 +19,6 @@ public class Expense {
     private String name;
     private String description;
     private long amount;
-    @ManyToOne
-    private Category category_id;
-    @ManyToOne
-    @JoinColumn
-    private Category category;
     private Date date;
-
-    private PaymentMethodEnum paymentMethod;
-
-    @ManyToMany
-    private List<Tag> tags;
+    private PaymentMethod paymentMethod;
 }

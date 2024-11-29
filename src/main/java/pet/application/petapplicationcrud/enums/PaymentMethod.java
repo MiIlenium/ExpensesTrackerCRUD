@@ -1,6 +1,6 @@
 package pet.application.petapplicationcrud.enums;
 
-public enum PaymentMethodEnum {
+public enum PaymentMethod {
     CASH,
     CARD,
     TRANSFER

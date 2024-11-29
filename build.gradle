@@ -28,6 +28,8 @@ dependencies {
     implementation group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '3.4.0'
     implementation group: 'org.mapstruct', name: 'mapstruct', version: '1.6.3'
     annotationProcessor group: 'org.mapstruct', name: 'mapstruct-processor', version: '1.6.3'
+    implementation group: 'org.liquibase', name: 'liquibase-core', version: '4.30.0'
+    implementation group: 'org.postgresql', name: 'postgresql', version: '42.7.4'
 
     testImplementation group: 'com.h2database', name: 'h2', version: '2.3.232'
     compileOnly 'org.projectlombok:lombok'
