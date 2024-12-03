@@ -2,10 +2,7 @@ package pet.application.petapplicationcrud.controller;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import pet.application.petapplicationcrud.dto.ExpenseDTO;
 import pet.application.petapplicationcrud.entity.Expense;
 import pet.application.petapplicationcrud.service.ExpenseService;
@@ -28,5 +25,20 @@ public class ExpenseController {
     @GetMapping("/api/expense/listAll")
     public Set<Expense> getAllExpenses() {
         return expenseService.getAllExpenses();
+    }
+
+    @GetMapping("/api/expense/{id}")
+    public Expense getExpenseById(@PathVariable Long id) {
+        return expenseService.getExpenseById(id);
+    }
+
+    @DeleteMapping("/api/expense/delete/{id}")
+    public void deleteExpenseById(@PathVariable Long id) {
+        expenseService.deleteExpenseById(id);
+    }
+
+    @PostMapping("/api/expense/update")
+    public void updateExpense(@RequestBody ExpenseDTO expense){
+        expenseService.updateExpense(expense);
     }
 }

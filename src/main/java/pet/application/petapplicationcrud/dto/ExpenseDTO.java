@@ -19,7 +19,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class ExpenseDTO {
-    private Long id;
+    private long id;
     @JsonProperty("name")
     private String name;
     @JsonProperty("description")

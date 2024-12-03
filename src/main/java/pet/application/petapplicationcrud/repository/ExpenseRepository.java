@@ -10,4 +10,5 @@ public interface ExpenseRepository extends CrudRepository<Expense, Long> {
 
     @Nonnull
     Set<Expense> findAll();
+    Expense findById(long id);
 }
