@@ -1,4 +1,5 @@
-
+--liquibase formatted sql
+--changeset Andrei Lavrinovich:1.0
 
 CREATE VIEW expenses_overview AS
 SELECT

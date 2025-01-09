@@ -18,7 +18,7 @@ public class ExpenseController {
 
     @PostMapping("/api/expense/create")
     public void createExpense(@RequestBody ExpenseDTO expense) {
-        log.debug("expense created {}", expense.getDescription());
+        log.debug("expense created {}", expense.getName());
         expenseService.addExpense(expense);
     }
 
