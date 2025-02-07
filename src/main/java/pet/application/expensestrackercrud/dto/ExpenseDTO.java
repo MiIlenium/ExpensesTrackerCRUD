@@ -1,4 +1,4 @@
-package pet.application.petapplicationcrud.dto;
+package pet.application.expensestrackercrud.dto;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -7,9 +7,9 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import pet.application.petapplicationcrud.enums.PaymentMethod;
-import pet.application.petapplicationcrud.entity.Category;
-import pet.application.petapplicationcrud.entity.Tag;
+import pet.application.expensestrackercrud.enums.PaymentMethod;
+import pet.application.expensestrackercrud.entity.Category;
+import pet.application.expensestrackercrud.entity.Tag;
 
 import java.util.Date;
 import java.util.List;

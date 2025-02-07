@@ -1,10 +1,10 @@
-package pet.application.petapplicationcrud.repository;
+package pet.application.expensestrackercrud.repository;
 
 import jakarta.persistence.EntityManager;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Repository;
-import pet.application.petapplicationcrud.dto.SummaryDTO;
+import pet.application.expensestrackercrud.dto.SummaryDTO;
 
 import java.util.List;
 

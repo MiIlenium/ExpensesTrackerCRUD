@@ -1,4 +1,4 @@
-package pet.application.petapplicationcrud.exception;
+package pet.application.expensestrackercrud.exception;
 
 import org.springframework.http.HttpStatus;
 

@@ -1,4 +1,4 @@
-package pet.application.petapplicationcrud;
+package pet.application.expensestrackercrud;
 
 import liquibase.integration.spring.SpringLiquibase;
 import lombok.extern.slf4j.Slf4j;
@@ -16,9 +16,9 @@ import javax.sql.DataSource;
 
 @SpringBootApplication
 @Slf4j
-public class PetApplicationCrudApplication {
+public class ExpensesTrackerCRUD {
     public static void main(String[] args) {
-        ApplicationContext context = SpringApplication.run(PetApplicationCrudApplication.class, args);
+        ApplicationContext context = SpringApplication.run(ExpensesTrackerCRUD.class, args);
         // Initialize Liquibase programmatically
         SpringLiquibase liquibase = new SpringLiquibase();
         liquibase.setDataSource(context.getBean(DataSource.class));

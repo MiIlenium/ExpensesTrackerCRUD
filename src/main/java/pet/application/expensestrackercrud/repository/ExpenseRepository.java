@@ -1,8 +1,8 @@
-package pet.application.petapplicationcrud.repository;
+package pet.application.expensestrackercrud.repository;
 
 import jakarta.annotation.Nonnull;
 import org.springframework.data.repository.CrudRepository;
-import pet.application.petapplicationcrud.entity.Expense;
+import pet.application.expensestrackercrud.entity.Expense;
 
 import java.util.Set;
 

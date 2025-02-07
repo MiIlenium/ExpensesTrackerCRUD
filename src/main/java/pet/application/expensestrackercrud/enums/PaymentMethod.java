@@ -1,4 +1,4 @@
-package pet.application.petapplicationcrud.enums;
+package pet.application.expensestrackercrud.enums;
 
 public enum PaymentMethod {
     CASH,

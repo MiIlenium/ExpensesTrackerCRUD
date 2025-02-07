@@ -1,11 +1,11 @@
-package pet.application.petapplicationcrud.controller;
+package pet.application.expensestrackercrud.controller;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-import pet.application.petapplicationcrud.dto.SummaryDTO;
-import pet.application.petapplicationcrud.service.ReportService;
+import pet.application.expensestrackercrud.dto.SummaryDTO;
+import pet.application.expensestrackercrud.service.ReportService;
 
 import java.util.List;
 

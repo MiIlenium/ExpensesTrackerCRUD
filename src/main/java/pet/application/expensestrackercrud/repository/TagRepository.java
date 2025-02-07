@@ -1,7 +1,7 @@
-package pet.application.petapplicationcrud.repository;
+package pet.application.expensestrackercrud.repository;
 
 import org.springframework.data.repository.CrudRepository;
-import pet.application.petapplicationcrud.entity.Tag;
+import pet.application.expensestrackercrud.entity.Tag;
 
 public interface TagRepository extends CrudRepository<Tag, Long> {
 }

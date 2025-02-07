@@ -1,4 +1,4 @@
-package pet.application.petapplicationcrud.service;
+package pet.application.expensestrackercrud.service;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
@@ -6,14 +6,14 @@ import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
-import pet.application.petapplicationcrud.dto.ExpenseDTO;
-import pet.application.petapplicationcrud.entity.Category;
-import pet.application.petapplicationcrud.entity.Expense;
-import pet.application.petapplicationcrud.entity.Tag;
-import pet.application.petapplicationcrud.exception.WebException;
-import pet.application.petapplicationcrud.repository.CategoryRepository;
-import pet.application.petapplicationcrud.repository.ExpenseRepository;
-import pet.application.petapplicationcrud.repository.TagRepository;
+import pet.application.expensestrackercrud.dto.ExpenseDTO;
+import pet.application.expensestrackercrud.entity.Category;
+import pet.application.expensestrackercrud.entity.Expense;
+import pet.application.expensestrackercrud.entity.Tag;
+import pet.application.expensestrackercrud.exception.WebException;
+import pet.application.expensestrackercrud.repository.CategoryRepository;
+import pet.application.expensestrackercrud.repository.ExpenseRepository;
+import pet.application.expensestrackercrud.repository.TagRepository;
 
 import java.util.List;
 import java.util.Set;

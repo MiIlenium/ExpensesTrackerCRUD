@@ -1,4 +1,4 @@
-package pet.application.petapplicationcrud.entity;
+package pet.application.expensestrackercrud.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -7,7 +7,7 @@ import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import pet.application.petapplicationcrud.enums.PaymentMethod;
+import pet.application.expensestrackercrud.enums.PaymentMethod;
 
 import java.util.Date;
 

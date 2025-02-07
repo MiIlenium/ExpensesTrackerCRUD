@@ -1,10 +1,10 @@
-package pet.application.petapplicationcrud.entity;
+package pet.application.expensestrackercrud.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import pet.application.petapplicationcrud.enums.PaymentMethod;
+import pet.application.expensestrackercrud.enums.PaymentMethod;
 
 import java.util.Date;
 

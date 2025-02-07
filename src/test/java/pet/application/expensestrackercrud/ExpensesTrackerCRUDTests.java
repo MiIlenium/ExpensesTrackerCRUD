@@ -1,10 +1,10 @@
-package pet.application.petapplicationcrud;
+package pet.application.expensestrackercrud;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class PetApplicationCrudApplicationTests {
+class ExpensesTrackerCRUDTests {
 
     @Test
     void contextLoads() {

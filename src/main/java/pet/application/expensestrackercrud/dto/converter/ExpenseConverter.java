@@ -1,9 +1,9 @@
-package pet.application.petapplicationcrud.dto.converter;
+package pet.application.expensestrackercrud.dto.converter;
 
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
-import pet.application.petapplicationcrud.dto.ExpenseDTO;
-import pet.application.petapplicationcrud.entity.Expense;
+import pet.application.expensestrackercrud.dto.ExpenseDTO;
+import pet.application.expensestrackercrud.entity.Expense;
 
 @Mapper(componentModel = "spring")
 public interface ExpenseConverter {
